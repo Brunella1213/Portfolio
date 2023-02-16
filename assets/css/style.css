@@ -1,0 +1,115 @@
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+
+.container {
+    padding: 80px 120px;
+  }
+
+  .big-heading {
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+h3 {
+    margin-top: 5px;
+    line-height: 0.9;
+}
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+  opacity: 0.9;
+  background-color: #900c3f;
+}
+
+.navbar-brand {
+    color: #f1f1f1;
+}
+
+/* .navbar-brand:hover {
+    color: #9c8a8a;
+} */
+
+.navbar-nav li a{
+    color: #f1f1f1;
+}
+
+/* .navbar-nav li a:hover{
+    color: #900c3f;
+    background-color: #f1f1f1;
+} */
+
+.resume-button {
+    background-color: #900c3f;
+    color: white;
+    border: 2px solid #530b26;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    width: 100%;    
+}
+
+.person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 215px;
+    height: 200px;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    } 
+  }
+
+  div.collapse .navbar-collapse ul li a:before, div.collapse .navbar-collapse ul li a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.navbar li a:before
+{
+    top: 0px;
+    transform: translateY(-10px);
+}
+
+.navbar li a:after
+{
+    bottom: 0px;
+    transform: translateY(10px);
+}
+
+.navbar li a:hover:before, .navbar li a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
