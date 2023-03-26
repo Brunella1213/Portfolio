@@ -1,52 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap');
+
 *, ::before, ::after {
     box-sizing: inherit;
 }
 
+body{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.float-right{
+  float: right;
+}
+
+.float-left{
+  float: left;
+}
 
 .container {
     padding: 80px 120px;
   }
 
-  .big-heading {
-    margin: 0px;
-    font-size: clamp(40px, 8vw, 80px);
-}
-
-h3 {
+/* h3 {
     margin-top: 5px;
     line-height: 0.9;
-}
-/* Remove the navbar's default margin-bottom and rounded borders */ 
-.navbar {
-  margin-bottom: 0;
-  border-radius: 0;
-  font-family: Montserrat, sans-serif;
-  opacity: 0.9;
-  background-color: #900c3f;
-}
-
-.navbar-brand {
-    color: #f1f1f1;
-}
-
-/* .navbar-brand:hover {
-    color: #9c8a8a;
 } */
 
-.navbar-nav li a{
-    color: #f1f1f1;
+h1 {
+  font-family: Raleway, sans-serif;
+  font-size: 3rem;
+}
+h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 2.3rem;
+}
+h3 {
+  font-family: Raleway, sans-serif;
+  font-size: 1.8rem;
 }
 
-/* .navbar-nav li a:hover{
-    color: #900c3f;
-    background-color: #f1f1f1;
+.navbar {
+  height: 65px;
+  /* background-color: var(--light-beige-color); */
+  /* background-color: var(--dark-violet-color);  */
+  background-color: var(--dark-rosybrown-color);
+  width: 100%;
+  /* border-bottom: 0.01rem solid var(--white-color); */
+  font-family: Montserrat;
+}
+
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar .navbar-header {
+  font-weight: bold;
+}
+
+.navbar .container-fluid .navbar-header a::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0.5%;
+  width: 0;
+  height: 0.2rem;
+  /* background: var(--white-color); */
+  transition: all 300ms ease-in-out;
+}
+
+.navbar .container-fluid .navbar-header a:hover::after{
+  width: 100%;
+}
+
+.navbar .container-fluid .navbar-header a{
+  color: inherit;
+  position: relative;
+}
+
+.navbar ul li a{
+  display: block;
+  padding: 2rem;
+  color: var(--brown-color);
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.navbar ul li a::after{
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  left: 25%;
+  width: 0;
+  height: 0.2rem;
+  background: var(--brown-color);
+  transition: all 300ms ease-in-out;
+}
+
+/* .navbar ul li a:hover::after{
+  width: 50%;
 } */
 
 .resume-button {
-    background-color: #900c3f;
-    color: white;
-    border: 2px solid #530b26;
+  background-color: var(--white-color);
+  color: var(--white-color);
+  border: 0.1rem solid var(--black-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 300ms ease-in-out;
 }
+
+/* Présentation */
+/* :target body{
+  background-color: var(--dark-rosybrown-color);
+} */
+
+.first-bg {
+  background-color: var(--dark-rosybrown-color);
+  width: 100%;
+ 
+}
+
+.img-intro img{
+  max-width: 100%;
+  height: auto;
+  /* left:800px;
+  top: 150px; */
+  margin-bottom: 2rem;
+}
+.img-intro img:hover {
+  -webkit-transform: rotateZ(-10deg);
+  -ms-transform: rotateZ(-10deg);
+  transform: rotateZ(-10deg);
+  transition: 0.7s ease;
+}
+
+#presentation .container .row .col-lg-6{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color : var(--dark-saddlebrown-color);
+}
+
+#presentation .page-header{
+  color:var(--dark-sienna-color); 
+}
+
+.text-animate { 
+  visibility:hidden;
+  color:var(--dark-sienna-color); 
+}
+
+.strong-intro {
+  color: var(--white-color);
+}
+
+/* A propos de moi */
+
 
 /* Add a gray background color and some padding to the footer */
 footer {
@@ -54,7 +175,7 @@ footer {
     width: 100%;    
 }
 
-.person {
+/* .person {
     border: 10px solid transparent;
     margin-bottom: 25px;
     width: 215px;
@@ -62,7 +183,7 @@ footer {
   }
   .person:hover {
     border-color: #f1f1f1;
-  }
+  } */
 
 html {
     scroll-behavior: smooth;
@@ -84,32 +205,45 @@ html {
     } 
   }
 
-  div.collapse .navbar-collapse ul li a:before, div.collapse .navbar-collapse ul li a:after
-{
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .rainbow-border {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; 
+    margin-top: 65px;
+  }
+  
+  .rainbow-border:before {
     content: "";
-    opacity: 0;
-    transition: all 0.3s;
-}
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 10px solid transparent;
+    border-image: linear-gradient(to right, #3D2B1F, #8B6969, #F9F9ED, #A0522D,#5E2612, #3D2B1F);  /* */
+    border-image-slice: 1;
+  }
 
-.navbar li a:before
-{
-    top: 0px;
-    transform: translateY(-10px);
-}
 
-.navbar li a:after
-{
-    bottom: 0px;
-    transform: translateY(10px);
-}
-
-.navbar li a:hover:before, .navbar li a:hover:after
-{
-    opacity: 1;
-    transform: translateY(0px);
-}
+  section {
+    height: 100vh;
+  }
+    

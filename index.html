@@ -5,72 +5,159 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/var.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-
   <script src="assets/js/script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
 </head>
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-inverse navbar-fixed-top transparent">
-    <div class="container">
+<nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#home">• Ony Brunella •</a>
         </div>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav navbar-right">
-                <li class="fadedown-enter-done" style="transition-delay: 0ms;">
+                <li>
+                    <a href="#presentation">Présentation</a>
+                </li>
+                <li>
                     <a href="#about">A propos de moi</a>
                 </li>
-                <li class="fadedown-enter-done" style="transition-delay: 100ms;">
-                    <a href="#education">Education</a>
-                </li>
-                <li class="fadedown-enter-done" style="transition-delay: 200ms;">
+                <li>
                     <a href="#project">Projets</a>
                 </li>
-                <li class="fadedown-enter-done" style="transition-delay: 300ms;">
+                <li>
                     <a href="#contact">Contact</a>
                 </li>
-                <li class="fadedown-enter-done" style="transition-delay: 400ms;">
-                    <a class="resume-button" href="CV.pdf" target="_blank">CV</a>
+                <li>
+                    <a class="resume-button" href="CV_Brunella_Andriatsahavojaona.pdf" target="_blank">CV</a>
                 </li> 
             </ul>
         </div>
     </div>
 </nav>
 
-<div id="home" class="content-section">
+<!-- <div id="border"></div> -->
+<section id="presentation" class="content-section first-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-header">
+          <h1>Hello, World.</h1>
+        </div>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Hi ! Je suis <strong class="strong-intro">Ony Brunella ANDRIATSAHAVOJAONA</strong> et je suis une étudiante en deuxième année à l'IUT de Villetaneuse en <strong class="strong-intro">BUT Informatique</strong>.</h2>
+          <h2 class="text-animate"><strong>Laissez moi vous parlez un peu de moi !</strong></h2>
+        </div>
+        <div class="col-lg-6">
+          <div class="img-intro">
+            <img src="assets/img/me.png" class="person" alt="Ony Brunella ANDRIATSAHAVOJAONA">
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<div class="rainbow-border"></div>
+  <section id="about" class="content-section second-bg">
     <div class="container">
-        <div class="row">
-        <!-- <div class="fadeup-enter-done" style="transition-delay: 100ms;">
-            <p>Hi, je suis</p>
-        </div> -->
-        <div class="page-header" style="transition-delay: 200ms;">
-            <h2 class="">Ony Brunella</h2>     
-            <h3 class="text-muted">Je suis une étudiante en deuxième année de <mark>BUT Informatique</mark> et mon projet professionnel est de devenir <mark>développeuse web</mark>.</h3>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="page-header">
+            <h2>A propos de moi</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <p>Je suis une jeune femme de 20 ans, passionnée par l'informatique et les nouvelles technologies. Je suis actuellement en deuxième année à l'IUT de Villetaneuse en <strong class="strong-intro">BUT Informatique</strong>.</p>
+          <p>Je suis une personne très curieuse et j'aime apprendre de nouvelles choses. J'aime aussi beaucoup voyager et découvrir de nouvelles cultures.</p>
+        </div>
+        <div class="col-lg-6">
+          <p>Je suis une personne très sociable et j'aime beaucoup travailler en équipe. Je suis également très rigoureuse et j'aime bien m'investir dans mes projets.</p>
+          <p>Je suis une personne très motivée et j'aime beaucoup relever de nouveaux défis.</p>
+        </div>
     </div>
-</div>
-</div>
+  </section>
+  
+  
 
-<main>
-<div class="container">
-    <h3>THE BAND</h3>
-    <p><em>We love music!</em></p>
-    <p>We have created a fictional band website. Lorem ipsum..</p>
-    <br>
+      
 
-    <div class="h-100">
-        <div class="col-sm-4">
-        <p><strong>Ony Brunella ANDRIATSAHAVOJAONA</strong></p><br>
-        <img src="assets/img/me.jpg" class="img-circle person" alt="Ony Brunella ANDRIATSAHAVOJAONA">
-    </div>
-</div>
-</div>
+          <!-- <div class="timeline">
+            <div class="timeline__group">
+              <span class="timeline__year time" aria-hidden="true">2008</span>
+              <div class="timeline__cards">
+                <div class="timeline__card card">
+                  <header class="card__header">
+                    <time class="time" datetime="2008-02-02">
+                      <span class="time__day">2</span>
+                      <span class="time__month">Feb</span>
+                    </time>
+                  </header>
+                  <div class="card__content">
+                    <p>Attends the Philadelphia Museum School of Industrial Art. Studies design with Alexey Brodovitch, art director at Harper's Bazaar, and works as his assistant.</p>
+                  </div>
+                </div>
+                <div class="timeline__card card">
+                  <header class="card__header">
+                    <time class="time" datetime="2008-09-01">
+                      <span class="time__day">1</span>
+                      <span class="time__month">Sept</span>
+                    </time>
+                    <h3 class="card__title r-title">The part of my life in University of Pennsylvania</h3>
+                  </header>
+                  <div class="card__content">
+                    <p>Started from University of Pennsylvania. This is an important stage of my career. Here I worked in the local magazine. The experience greatly affected me</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__group">
+              <span class="timeline__year time" aria-hidden="true">2014</span>
+              <div class="timeline__cards">
+                <div class="timeline__card card">
+                  <header class="card__header">
+                    <time class="time" datetime="2008-07-14">
+                      <span class="time__day">14</span>
+                      <span class="time__month">Jul</span>
+                    </time>
+                  </header>
+                  <div class="card__content">
+                    <p>Travels to France, Italy, Spain, and Peru. After completing fashion editorial in Lima, prolongs stay to make portraits of local people in a daylight studio</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__group">
+              <span class="timeline__year time" aria-hidden="true">2016</span>
+              <div class="timeline__cards">
+                <div class="timeline__card card">
+                  <header class="card__header">
+                    <time class="time" datetime="2008-08-18">
+                      <span class="time__day">28</span>
+                      <span class="time__month">Aug</span>
+                    </time>          
+                  </header>
+                  <div class="card__content">
+                    <p>Upon moving to Brooklyn that summer, I began photographing weddings in Chicago</p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+        <!-- <div class="linktr">
+          <a href="https://cssisntmagic.substack.com" target="_blank" class="linktr__goal r-link">Subscribe on my email newsletter with CSS tips 💪💪💪</a>
+        </div -->
+
+
   
 <!-- <div class="container-fluid bg-3 text-center">    
   <h3>Some of my Work</h3><br>
