@@ -63,7 +63,6 @@ h3 {
   padding-top: 50px;
 }
 
-
 /* --------------------------- Menu ------------------------------------------ */
 
 .navbar-default {
@@ -169,9 +168,122 @@ h3 {
   color: var(--white-color);
 }
 
-/* A propos de moi */
+/* ----------------------- Biographie ------------------------------------------------------ */
 
 
+
+
+
+
+/* ---------------------------------------- Frise chronologique ---------------------------------------- */
+
+.timeline {
+  position: relative;
+  padding: 50px 0;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  background: #ccc;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 50px 0;
+  clear: both;
+}
+
+.timeline-item-content {
+  position: relative;
+  width: 45%;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.timeline-item-content::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 20px);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 20px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.timeline-item-content::after {
+  content: '';
+  position: absolute;
+  top: -21px;
+  left: calc(50% - 21px);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 21px 21px 21px;
+  border-color: transparent transparent rgba(0,0,0,.2) transparent;
+}
+
+.timeline-item-content h2 {
+  margin-top: 0;
+  color: #c45e46;
+}
+
+.timeline-item-content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.timeline-item:nth-child(even) .timeline-item-content {
+  float: right;
+}
+
+.timeline-item:nth-child(even) .timeline-item-content::before {
+  right: auto;
+  left: -20px;
+  border-width: 20px 20px 0 20px;
+  border-color: #fff transparent transparent transparent;
+}
+
+.timeline-item:nth-child(even) .timeline-item-content::after {
+  right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------- Compétences ------------------------------------------------------ */
+
+.img-responsive {
+  width: 64px;
+  height: auto;
+}
 
 
 
