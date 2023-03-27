@@ -42,6 +42,33 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
   
   
+  $(document).ready(function() {
+
+    // Fix for "hamburger menu" not collapsing after a click on menu item
+    $("nav").find("li").on("click", "a", function() {
+      $('.navbar-collapse.in').collapse('hide');
+    });
+
+    // Add smooth scrolling to all nav links
+    $(".navbar a, footer a[href='#home']").on('click', function(event) {
+      // Don't scroll if on a mobile phone, it's too awkward
+      if (this.hash !== "" && $(window).width() > 480) {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+        // Store hash
+        var hash = this.hash;
+        // Scroll to hash tag in 700 ms
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 700, function() {
+          // Add hash (#) to URL when done scrolling
+          window.location.hash = hash;
+        });
+      }
+    });
+
+  });
+  
   // JavaScript pour le bouton "Haut de page"
   // When the user scrolls down 20px from the top of the document, show the button
   // window.onscroll = function() {

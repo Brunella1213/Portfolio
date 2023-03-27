@@ -1,10 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap');
 
-*, ::before, ::after {
-    box-sizing: inherit;
-}
-
 body{
   margin: 0;
   padding: 0;
@@ -26,11 +22,6 @@ a{
     padding: 80px 120px;
   }
 
-/* h3 {
-    margin-top: 5px;
-    line-height: 0.9;
-} */
-
 h1 {
   font-family: Raleway, sans-serif;
   font-size: 3rem;
@@ -44,14 +35,35 @@ h3 {
   font-size: 1.8rem;
 }
 
-.navbar {
-  height: 65px;
-  /* background-color: var(--light-beige-color); */
-  /* background-color: var(--dark-violet-color);  */
-  background-color: var(--dark-rosybrown-color);
+.page-view {
+  min-height: 100vh;
+}
+.page-view h4 {
+  font-size: 1.6em;
+  margin-left: 10px;
+}
+.page-view h4> i {
+  vertical-align: middle;
+}
+.page-view h5 {
+  font-size: 1.2em;
+}
+.page-view a {
+  color: var(--black-color);
+}
+
+#about, #skills{
+  padding-top: 50px;
+}
+
+
+/* --------------------------- Menu ------------------------------------------ */
+
+.navbar-default {
+  height: 60px;
   width: 100%;
-  /* border-bottom: 0.01rem solid var(--white-color); */
   font-family: Montserrat;
+  color: var(--light-violet-color);
 }
 
 .navbar .container-fluid {
@@ -62,8 +74,10 @@ h3 {
   padding-bottom: 0;
 }
 
-.navbar .navbar-header {
+.navbar-brand {
+  padding: 0px;
   font-weight: bold;
+  
 }
 
 .navbar .container-fluid .navbar-header a::after{
@@ -73,8 +87,24 @@ h3 {
   left: 0.5%;
   width: 0;
   height: 0.2rem;
-  /* background: var(--white-color); */
   transition: all 300ms ease-in-out;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: var(--light-violet-color);
+  font-weight: 800;
+  display: block;
+  padding: 2rem;
+}
+
+.navbar-default .navbar-nav> li> a:hover, .navbar-default .navbar-nav> li> a:focus {
+  color: var(--dark-violet-color);
+}
+
+.navbar-default .navbar-nav> .active> a, .navbar-default .navbar-nav> .active> a:hover, .navbar-default .navbar-nav> .active> a:focus {
+  /* color: white; */
+  background-color: var(--light-violet-color);
+  color: var(--dark-violet-color);
 }
 
 .navbar .container-fluid .navbar-header a:hover::after{
@@ -86,56 +116,24 @@ h3 {
   position: relative;
 }
 
-.navbar ul li a{
-  display: block;
-  padding: 2rem;
-  color: var(--brown-color);
-  font-size: 1.8rem;
-  position: relative;
-}
-
-.navbar ul li a::after{
-  content: '';
-  position: absolute;
-  bottom: 1rem;
-  left: 25%;
-  width: 0;
-  height: 0.2rem;
-  background: var(--brown-color);
+.navbar >.navbar-nav>.resume-button {
+  color: var(--light-violet-color);
+  font-size: 1.5rem;
+  font-weight: 500;
   transition: all 300ms ease-in-out;
 }
 
-/* .navbar ul li a:hover::after{
-  width: 50%;
-} */
+/* ---------------------------- Présentation -------------------------------------*/
 
-.resume-button {
-  background-color: var(--white-color);
-  color: var(--white-color);
-  border: 0.1rem solid var(--black-color);
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: all 300ms ease-in-out;
-}
-
-/* Présentation */
-/* :target body{
-  background-color: var(--dark-rosybrown-color);
-} */
 
 .first-bg {
-  background-color: var(--dark-rosybrown-color);
+  background-color: var(--light-violet-color);
   width: 100%;
- 
 }
 
 .img-intro img{
   max-width: 100%;
   height: auto;
-  /* left:800px;
-  top: 150px; */
   margin-bottom: 2rem;
 }
 .img-intro img:hover {
@@ -150,7 +148,7 @@ h3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color : var(--dark-saddlebrown-color);
+  color : var(--dark-saddleblack-color);
 }
 
 #presentation .page-header{
@@ -167,6 +165,9 @@ h3 {
 }
 
 /* A propos de moi */
+
+
+
 
 
 /* Add a gray background color and some padding to the footer */
@@ -188,6 +189,49 @@ footer {
 html {
     scroll-behavior: smooth;
   }
+
+  /* Tablets */
+  @media (max-width: 992px) {
+    .navbar ul li a {
+      font-size: .9em;
+      padding-left: 0;
+    }
+  }
+
+/* Portrait phones and smaller */
+
+@media (max-width: 480px) {
+  .navbar ul li a {
+    font-size: .9em;
+    padding-left: 0;
+  }
+  .navbar-brand>img {
+    height: auto;
+    padding: 7px 15px;
+    width: 200px;
+  }
+  #home, #contact {
+    padding: 80px 25px;
+    background-position: 60% 50%;
+    background-position-x: 60%;
+    background-position-y: 50%;
+    background-size: cover;
+    text-align: center;
+  }
+  h1.title {
+    font-size: 1.8em;
+    padding-top: 1.6em;
+  }
+  h3.title {
+    font-size: 1.2em;
+  }
+  .container-fluid {
+    padding-top: 80px;
+  }
+  .fa-stack {
+    font-size: 1.3em;
+  }
+}
 
   @media screen and (max-width: 768px) {
     .col-sm-4 {
@@ -218,7 +262,7 @@ html {
 
 
 
-
+/*---------------------------------------- Bordure multicolore ------------------ */
 
   .rainbow-border {
     position: fixed;
@@ -226,8 +270,8 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1; 
-    margin-top: 65px;
+    z-index: -1; 
+    margin-top: 60px;
   }
   
   .rainbow-border:before {
@@ -238,7 +282,7 @@ html {
     right: 0;
     bottom: 0;
     border: 10px solid transparent;
-    border-image: linear-gradient(to right, #3D2B1F, #8B6969, #F9F9ED, #A0522D,#5E2612, #3D2B1F);  /* */
+    border-image: linear-gradient(to right, #F9F9ED, #6D5C7D,#8874A3, #B7ABC7, #F9F9ED );  /* #3D2B1F, #8B6969, #F9F9ED, #A0522D,#5E2612, #3D2B1F*/
     border-image-slice: 1;
   }
 
