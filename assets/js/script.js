@@ -70,18 +70,41 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
   
   // JavaScript pour le bouton "Haut de page"
-  // When the user scrolls down 20px from the top of the document, show the button
-  // window.onscroll = function() {
-  //   scrollFunction()
-  // };
 
-  // function scrollFunction() {
-  //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-  //     document.getElementById("home").style.display = "block";
-  //   } else {
-  //     document.getElementById("home").style.display = "none";
-  //   }
-  // }
+//   window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     document.getElementById("haut-page").style.display = "block";
+//   } else {
+//     document.getElementById("haut-page").style.display = "none";
+//   }
+// }
+
+// function scrollToTop() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
+
+const boutonRetourHaut = document.querySelector('#haut-page');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    boutonRetourHaut.style.display = 'block';
+  } else {
+    boutonRetourHaut.style.display = 'none';
+  }
+});
+
+boutonRetourHaut.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+
+  
 
 
 

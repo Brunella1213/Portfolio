@@ -16,6 +16,8 @@
 </head>
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
 
+<button id="haut-page" title="Retour en haut de page"></button>   <!-- <i class="fa fa-chevron-up"></i> -->
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header navbar-left">
@@ -38,6 +40,7 @@
   </div>
 </nav>
 
+<div class="rainbow-border"></div>
 <section id="home" class="content-fluid first-bg page-view ">
   <div class="container">
     <div class="row">
@@ -61,10 +64,9 @@
   </div>
 </section>
 
-<div class="rainbow-border"></div>
-  <section id="about" class="page-view">
-    <div class="container">
-      <div class="row">
+<section id="about" class="page-view">
+  <div class="container">
+    <div class="row">
       <div class="col-lg-12">
         <div class="display-2">
           <h2>A propos de moi</h2>
@@ -81,9 +83,9 @@
               <p>En effet, je recherche activement un contrat d'alternance d'une durée d'1 an à partir de Septembre 2023 dans le domaine du développement web.</p>
             </div>
           </div>
-        </div>
       </div>
-  </section>
+  </div>
+</section>
 
 <section id="skills" class="container-fluid page-view">
   <div class="container">
@@ -107,6 +109,7 @@
 
 <!-- ------------- Contact Section ------------------------>
 <section id="contact" class="container-fluid text-center bg-grey page-view">
+  <div class="container">
   <h2 class="page-title red">Contact</h2>
   <h3 class="title">N'hésitez pas si vous avez des questions !</h3>
   <div class="row">
@@ -137,12 +140,14 @@
       </ul>
     </div>
   </div>
+</div>
 </section>
+
 
 
 <!-- Footer -->
 <footer class="container-fluid text-center">
-    <a class="up-arrow" href="#HautPage" data-toggle="tooltip" title="TO TOP">
+    <a class="up-arrow" href="#home" data-toggle="tooltip" title="Vers le haut de page">
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a><br><br>
     <p>Made by Me with ♥</p> 
