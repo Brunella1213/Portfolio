@@ -1,4 +1,6 @@
 
+/* ---------------------------------------------------------------------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap');
 
 * {
@@ -8,6 +10,7 @@
   padding: 0;
 }
 body{
+  background-color: var(--white-color) !important;
   margin: 0;
   padding: 0;
 }
@@ -20,43 +23,14 @@ a{
   text-decoration: none;
 }
 
-.float-right{
-  float: right;
-}
-
-.float-left{
-  float: left;
-}
 
 .container {
     padding: 80px 120px;
+    position: relative;
   }
-
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2.3rem;
-}
-h3 {
-  font-size: 1.8rem;
-}
 
 .page-view {
   min-height: 100vh;
-}
-.page-view h4 {
-  font-size: 1.6em;
-  margin-left: 10px;
-}
-.page-view h4> i {
-  vertical-align: middle;
-}
-.page-view h5 {
-  font-size: 1.2em;
-}
-.page-view a {
-  color: var(--black-color);
 }
 
 #about, #skills{
@@ -65,10 +39,16 @@ h3 {
 
 /* --------------------------- Menu ------------------------------------------ */
 
-.navbar-default {
-  height: 60px;
-  width: 100%;
-  color: var(--light-violet-color);
+.navbar {
+  background-color: var(--white-color) !important;
+  color: var(--pink-color) !important;
+  /* /* border: none;
+  border-radius: 0;
+  margin-bottom: 0; */
+  font-size: 1.6rem;
+  /* letter-spacing: .1rem; */
+  /* font-weight: 1000; */
+  /* opacity: 0.9; */
 }
 
 .navbar .container-fluid {
@@ -79,36 +59,29 @@ h3 {
   padding-bottom: 0;
 }
 
-.navbar-brand {
-  padding: 0px;
+.navbar .navbar-header .navbar-brand {
   font-weight: bold;
-  
-}
-
-.navbar .container-fluid .navbar-header a::after{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0.5%;
-  width: 0;
-  height: 0.2rem;
-  transition: all 300ms ease-in-out;
+  font-size: 2rem;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: var(--light-violet-color);
+  color: var(--black-color) !important;
   font-weight: 800;
   display: block;
   padding: 2rem;
 }
 
 .navbar-default .navbar-nav> li> a:hover, .navbar-default .navbar-nav> li> a:focus {
-  color: var(--dark-violet-color);
+  color: var(--white-color) !important;
+}
+
+.navbar-default .navbar-nav> li> a:hover, .navbar-default .navbar-nav> li> a:hover {
+  color: var(--brown-color) !important;
 }
 
 .navbar-default .navbar-nav> .active> a, .navbar-default .navbar-nav> .active> a:hover, .navbar-default .navbar-nav> .active> a:focus {
-  background-color: var(--light-violet-color);
-  color: var(--dark-violet-color);
+  background-color: var(--pink-color) !important;
+  color: var(--white-color) !important;
 }
 
 .navbar .container-fluid .navbar-header a:hover::after{
@@ -121,51 +94,69 @@ h3 {
 }
 
 .navbar >.navbar-nav>.resume-button {
-  color: var(--light-violet-color);
   font-size: 1.5rem;
   font-weight: 500;
   transition: all 300ms ease-in-out;
+}
+
+.navbar >.navbar-nav>.resume-button:after {
+  color: var(--black  -color) !important;
 }
 
 /* ---------------------------- Présentation -------------------------------------*/
 
 
 .first-bg {
-  background-color: var(--light-violet-color);
+  background-color: var(--white-color) !important;
   width: 100%;
 }
 
 .img-intro img{
+  position: absolute;
   max-width: 100%;
   height: auto;
-  margin-bottom: 2rem;
+  z-index: 1;
 }
+
 .img-intro img:hover {
-  -webkit-transform: rotateZ(-10deg);
-  -ms-transform: rotateZ(-10deg);
-  transform: rotateZ(-10deg);
+  transform: scale(1.1);
   transition: 0.7s ease;
 }
 
-#presentation .container .row .col-lg-6{
+#home .container .row .col-lg-6{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color : var(--dark-saddleblack-color);
+  color : var(--black-color);
 }
 
-#presentation .page-header{
-  color:var(--dark-sienna-color); 
+#home .page-header{
+  color:var(--brown-color); 
 }
 
 .text-animate { 
   visibility:hidden;
-  color:var(--dark-sienna-color); 
+  color:var(--brown-color); 
 }
 
 .strong-intro {
-  color: var(--white-color);
+  color: var(--pink-color);
+}
+
+
+.rectangle {
+  position : relative;
+  width:560px;
+  height:200px;
+  background-color: var(--brown-color) !important;
+  top: 300px;
+  left: 300px; 
+}
+
+.rectangle :hover {
+  transform: scale(1.1);
+  transition: 0.7s ease;
 }
 
 /* ----------------------- Biographie ------------------------------------------------------ */
@@ -177,7 +168,8 @@ h3 {
 
 /* ---------------------------------------- Frise chronologique ---------------------------------------- */
 
-.timeline {
+
+ /* .timeline {
   position: relative;
   padding: 50px 0;
   margin: 0 auto;
@@ -259,7 +251,63 @@ h3 {
 
 .timeline-item:nth-child(even) .timeline-item-content::after {
   right: auto;
+}  */
+
+/* Couleurs personnalisées */
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding: 50px 0;
+  margin: 0 auto;
+  max-width: 1200px;
 }
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2.5px;
+  height: 100%;
+  background: var(--brown-color);
+}
+
+.timeline-item {
+  position: relative;
+  margin: 50px 0;
+  clear: both;
+}
+
+.timeline-item-content {
+  position: relative;
+  width: 45%;
+  padding: 20px;
+  background: var(--white-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  border-radius: 8px;
+  overflow: hidden;
+  padding-top: 35px;
+}
+
+.timeline-item-content h2 {
+  margin-top: 0;
+  color: var(--pink-color);
+}
+
+.timeline-item-content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--black-color) !important; 
+}
+
+.timeline-item:nth-child(even) .timeline-item-content {
+  float: right;
+}
+
+
 
 
 
@@ -280,28 +328,70 @@ h3 {
 
 /* ----------------------- Compétences ------------------------------------------------------ */
 
-.img-responsive {
-  width: 64px;
-  height: auto;
+.skill-icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-icon-container i {
+  color: var(--brown-color);
+  padding: 10px;
+  font-size: 5em;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-icon-container i:hover {
+  transform: scale(1.2);
+}
+
+/* ----------------------- Contact ------------------------------------------------------ */
+
+#contact {
+  color: var(--black-color) !important;
+  padding: 200px 0;
+}
+
+#contact i {
+  color: var(--brown-color);
+  transition: all 0.3s ease-in-out;
 }
 
 
 
-/* Add a gray background color and some padding to the footer */
+
+
+/* ----------------------- Footer ------------------------------------------------------ */
+
+
 footer {
-    background-color: #f2f2f2;
-    width: 100%;    
+  margin-top: 0;
+  padding: 50px 0;
+	background-color: var(--black-color);
+	color: white;
+}
+footer p {
+	font-size: 12px;
+	color: #ccc;
+	cursor: pointer;
+}
+footer p:hover {
+	color: #fff;
 }
 
-/* .person {
-    border: 10px solid transparent;
-    margin-bottom: 25px;
-    width: 215px;
-    height: 200px;
-  }
-  .person:hover {
-    border-color: #f1f1f1;
-  } */
+footer a {
+  color: #ccc;
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+
+
+
+
 
 
 
@@ -325,14 +415,7 @@ footer {
     padding: 7px 15px;
     width: 200px;
   }
-  /* #home, #contact {
-    padding: 80px 25px;
-    background-position: 60% 50%;
-    background-position-x: 60%;
-    background-position-y: 50%;
-    background-size: cover;
-    text-align: center;
-  } */
+
   h1.title {
     font-size: 1.8em;
     padding-top: 1.6em;
