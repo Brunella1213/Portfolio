@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
   <title>Ony Brunella</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio de Ony Brunella ANDRIATSAHAVOJAONA">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="description" content="Portfolio de Ony Brunella ANDRIATSAHAVOJAONA">
+  <meta name="author" content="Ony Brunella ANDRIATSAHAVOJAONA">
+
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/var.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css">
+
   <script src="https://kit.fontawesome.com/fe55d68bf0.js" crossorigin="anonymous"></script>
   <script src="assets/js/script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 </head>
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<a href="home" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+
+<!-- 
+<div class="theme-switch">
+<label for="toggle-checkbox"></label>
+<input type="checkbox" id="toggle-checkbox">
+<div class="slider"></div> -->
+
+
+
+    
+
+
 
 <!-- <div class="rainbow-border"></div> -->
 
@@ -27,7 +49,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a class="navbar-brand" href="#home">♫ Ony Brunella ♫</a>
+        <a class="navbar-brand" href="#home"><i class="fa-regular fa-star"></i>&nbsp;&nbsp;Ony Brunella&nbsp;&nbsp;<i class="fa-regular fa-star"></i></a>
     </div>
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav navbar-right">
@@ -38,10 +60,21 @@
           <li><a class="resume-button" href="CV_Ony_Brunella_ANDRIATSAHAVOJAONA.pdf" target="_blank">CV</a></li> 
         </ul>
       </div>
+      <!-- <label class="switch" for="theme-switch">
+        <input type="checkbox" id="theme-switch">
+        <span class="slider round"></span>
+      </label> -->
+
+      <button id="mode-toggle">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </button>
+      
+    
   </div>
 </nav>
 
-<section id="home" class="content-fluid first-bg page-view">
+<section id="home" class="content-fluid page-view">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -76,12 +109,12 @@
     </div>
       <div class="row">
         <div class="col-lg-6">
-          <p>Actuellement étudiante en BUT Informatique, je suis une personne créative et passionnée par le web design. Concevoir des interfaces attrayantes et fonctionnelles pour les sites web est un domaine du développement informatique que j'aime énormément.</p>
+          <p>Je suis une étudiante en BUT Informatique et passionnée par le web design.</p>
           <p>Mon objectif est donc de devenir développeuse web fullstack ou front end.</p>
         </div>
           <div class="row">
             <div class="col-lg-6">
-              <p>En effet, je recherche activement un contrat d'alternance d'une durée d'1 an à partir de Septembre 2023 dans le domaine du développement web.</p>
+              <p>Je recherche activement un contrat d'alternance d'une durée d'1 an à partir de Septembre 2023 dans le domaine du développement web.</p>
             </div>
           </div>
       </div>
@@ -93,7 +126,6 @@
   <div class="row">
     <div class="timeline">
       <div class="timeline-item">
-        <!-- <div class="timeline-item-arrow"></div> -->
         <div class="timeline-item-content">
           <h2>BUT Informatique</h2>
           <p>Actuellement en deuxième année</p>
@@ -103,8 +135,8 @@
       </div>
       <div class="timeline-item">
         <div class="timeline-item-content">
-          <h2>Baccalauréat général</h2>
-          <p>Mention assez bien <i class="fa-regular fa-circle-check"></i></p>
+          <h2>Baccalauréat général&nbsp;<i class="fa-regular fa-circle-check"></i></h2>
+          <p>Mention assez bien </p>
           <p>Sciences de l'Ingénieur, Physique-Chimie, Maths</p>
           <p>Lycée Paul Eluard, Saint-Denis, France</p>
           <p>Septembre 2018 - Juillet 2021</p>
@@ -112,8 +144,8 @@
       </div>
       <div class="timeline-item">
         <div class="timeline-item-content">
-          <h2>Brevet des collèges</h2>
-          <p>Mention très bien <i class="fa-regular fa-circle-check"></i></p>
+          <h2>Brevet des collèges&nbsp;<i class="fa-regular fa-circle-check"></i></h2>
+          <p>Mention très bien </p>
           <p>Collège Elsa Triolet, Saint-Denis, France</p>
           <p>Septembre 2015 - Juin 2018</p>
         </div>
@@ -127,35 +159,51 @@
 
 <!-- ------------- Skills Section ------------------------>   
 
-              <!-- <li><i class="fas fa-check"></i> Item 1</li> -->
-
 <section id="skills" class="container-fluid page-view">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h2><i class="devicon-code-plain"></i>Langages de programmation</h2>
+        <h2><i class="fa fa-code"></i>&nbsp;&nbsp;&nbsp;Langages de programmation</h2>
           <div class="skill-icon-container">
-            <ul class="icon-list">
-              <i class="devicon-html5-plain" title="HTML 5"></i>
-              <i class="devicon-css3-plain" title="CSS 3"></i>
-              <i class="devicon-php-plain" title="PHP"></i>
-              <i class="devicon-java-plain" title="Java"></i>
-              <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
-              <i class="fas fa-database" title="SQL"></i>
-              <ul class="icon-list">
-                
-            </ul>
-
-            <i class="devicon-mysql-plain" title="mySQL"></i>
+            <i class="devicon-html5-plain" title="HTML 5"></i>
+            <i class="devicon-css3-plain" title="CSS 3"></i>
+            <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
+            <i class="devicon-php-plain" title="PHP"></i>
+            <i class="devicon-java-plain" title="Java"></i>
+            <i class="devicon-javascript-plain" title="JavaScript : en cours d'apprentissage"></i>
+            <i class="devicon-cplusplus-plain" title="C++ : en cours d'apprentissage"></i>
+          </div>
+      </div>
+      <div class="col-md-6">
+        <h2><i class="fa fa-file-code-o"></i>&nbsp;&nbsp;&nbsp;Compétences techniques</h2>
+          <div class="skill-icon-container"> 
+            <i class="fas fa-database" title="SQL"></i>
+            <i class="devicon-mysql-plain" title="MySQL"></i>
             <i class="devicon-mariadb-plain" title="MariaDB"></i>
             <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
-
-
             <i class="devicon-linux-plain" title="Linux"></i>
             <i class="devicon-windows8-original" title="Windows"></i>
+            <i class="devicon-git-plain" title="Git"></i>
             <i class="devicon-github-plain" title="Github"></i>
-            <i class="devicon-javascript-plain" title="JavaScript"></i>
-            <i class="devicon-cplusplus-plain" title="C++"></i>
+          </div>
+      </div>
+      <div class="col-lg-12">
+      <div class="col-md-6">
+        <h2><i class="fa-solid fa-book-open"></i>&nbsp;&nbsp;&nbsp;Compétences transversales</h2>
+          <div class="skill-container"> 
+            <p>Travail en équipe</p>
+            <p>Créativité</p>
+            <p>Communication orale et écrite</p>
+            <p>Compréhension des besoins client</p>
+            <p>Gestion de projet</p>
+          </div>
+      </div>
+      <div class="col-md-6">
+        <h2><i class="fas fa-language"></i>&nbsp;&nbsp;&nbsp;Langues</h2>
+            <div class="skill-container"> 
+              <p>Anglais : niveau B1</p>
+              <p>Français : langue maternelle</p>
+            </div>
           </div>
       </div>
     </div>  
@@ -165,37 +213,37 @@
 <!-- ------------- Contact Section ------------------------>
 <section id="contact" class="container-fluid text-center page-view">
   <div class="container">
-  <h2 class="page-title red">Contact</h2>
-  <h3 class="title">N'hésitez pas si vous avez des questions !</h3>
-  <div class="row">
-    <div class="col-sm-12">
-      <ul class="list-inline">
-        <li>
-          <a href="https://www.linkedin.com/in/ony-brunella-andriatsahavojaona/" target="_blank" title="Mon Linkedin">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle-thin fa-stack-2x"></i>
-              <i class="fa fa-linkedin fa-stack-1x"></i>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Brunella1213" target="_blank" title="Mon Github">
-            <span class="fa-stack fa-lg">
+    <h2 class="page-title red">Contact</h2>
+    <h3 class="title">N'hésitez pas si vous avez des questions !</h3>
+    <div class="row">
+      <div class="col-sm-12">
+        <ul class="list-inline">
+          <li>
+            <a href="https://www.linkedin.com/in/ony-brunella-andriatsahavojaona/" target="_blank" title="Mon Linkedin">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Brunella1213" target="_blank" title="Mon Github">
+              <span class="fa-stack fa-lg">
               <i class="fa fa-circle-thin fa-stack-2x"></i>
               <i class="fa fa-github fa-stack-1x"></i>
-            </span>
-          </a>
-        </li>
-      </ul>
-      <ul class="list-inline">
-        <li>
-          <p><span class="glyphicon glyphicon-phone"></span> +33 7 64 83 63 58 </p>
-          <p><span class="glyphicon glyphicon-envelope"></span>  brunella.andria@gmail.com</p> 
-        </li>
-      </ul>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-inline">
+          <li>
+            <p><span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;&nbsp;+33 7 64 83 63 58 </p>
+            <p><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;&nbsp;brunella.andria@gmail.com</p> 
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 </section>
 
 
@@ -206,12 +254,12 @@
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a><br><br>
     <p>Made by Me with ♥</p> 
-    <p><i class="fa-regular fa-copyright"></i> Ony Brunella ANDRIATSAHAVOJAONA</p>
+    <p><i class="fa-regular fa-copyright"></i>&nbsp;&nbsp;&nbsp;Ony Brunella ANDRIATSAHAVOJAONA</p>
+</footer>
 
-  </footer>
-
-
-  <button id="haut-page" title="Retour en haut de page"></button>
+<script src="assets/js/dark-light-mode.js"></script>
+<script src="assets/js/back-to-top.js"></script>
 
 </body>
+
 </html>

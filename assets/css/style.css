@@ -9,10 +9,12 @@
   margin: 0;
   padding: 0;
 }
+
 body{
   background-color: var(--white-color) !important;
   margin: 0;
   padding: 0;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 html {
@@ -33,22 +35,12 @@ a{
   min-height: 100vh;
 }
 
-#about, #skills{
-  padding-top: 50px;
-}
-
 /* --------------------------- Menu ------------------------------------------ */
 
-.navbar {
+.navbar{
   background-color: var(--white-color) !important;
   color: var(--pink-color) !important;
-  /* /* border: none;
-  border-radius: 0;
-  margin-bottom: 0; */
   font-size: 1.6rem;
-  /* letter-spacing: .1rem; */
-  /* font-weight: 1000; */
-  /* opacity: 0.9; */
 }
 
 .navbar .container-fluid {
@@ -105,12 +97,6 @@ a{
 
 /* ---------------------------- Présentation -------------------------------------*/
 
-
-.first-bg {
-  background-color: var(--white-color) !important;
-  width: 100%;
-}
-
 .img-intro img{
   position: absolute;
   max-width: 100%;
@@ -166,96 +152,8 @@ a{
 
 
 
-/* ---------------------------------------- Frise chronologique ---------------------------------------- */
+                                                        /* ---------------------------------------- Frise chronologique ---------------------------------------- */
 
-
- /* .timeline {
-  position: relative;
-  padding: 50px 0;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -1px;
-  width: 2px;
-  height: 100%;
-  background: #ccc;
-}
-
-.timeline-item {
-  position: relative;
-  margin: 50px 0;
-  clear: both;
-}
-
-.timeline-item-content {
-  position: relative;
-  width: 45%;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,.2);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.timeline-item-content::before {
-  content: '';
-  position: absolute;
-  top: -20px;
-  left: calc(50% - 20px);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 20px 20px 20px;
-  border-color: transparent transparent #fff transparent;
-}
-
-.timeline-item-content::after {
-  content: '';
-  position: absolute;
-  top: -21px;
-  left: calc(50% - 21px);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 21px 21px 21px;
-  border-color: transparent transparent rgba(0,0,0,.2) transparent;
-}
-
-.timeline-item-content h2 {
-  margin-top: 0;
-  color: #c45e46;
-}
-
-.timeline-item-content p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.timeline-item:nth-child(even) .timeline-item-content {
-  float: right;
-}
-
-.timeline-item:nth-child(even) .timeline-item-content::before {
-  right: auto;
-  left: -20px;
-  border-width: 20px 20px 0 20px;
-  border-color: #fff transparent transparent transparent;
-}
-
-.timeline-item:nth-child(even) .timeline-item-content::after {
-  right: auto;
-}  */
-
-/* Couleurs personnalisées */
-
-/* Timeline */
 .timeline {
   position: relative;
   padding: 50px 0;
@@ -289,6 +187,12 @@ a{
   border-radius: 8px;
   overflow: hidden;
   padding-top: 35px;
+  transition: all 300ms ease-in-out;
+}
+
+.timeline-item-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
 
 .timeline-item-content h2 {
@@ -307,28 +211,18 @@ a{
   float: right;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----------------------- Compétences ------------------------------------------------------ */
 
-.skill-icon-container {
+#skills {
+  padding: 50px 0;
+} 
+
+#skills h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.skill-icon-container i{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -345,15 +239,31 @@ a{
   transform: scale(1.2);
 }
 
+.skill-container p {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--pink-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  transition: all 300ms ease-in-out;
+}
+
+.skill-container p:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+}
+
+
 /* ----------------------- Contact ------------------------------------------------------ */
 
 #contact {
   color: var(--black-color) !important;
   padding: 200px 0;
+  margin-bottom: -190px;
 }
 
 #contact i {
-  color: var(--brown-color);
+  color: var(--pink-color);
   transition: all 0.3s ease-in-out;
 }
 
@@ -365,7 +275,7 @@ a{
 
 
 footer {
-  margin-top: 0;
+  margin-top: -50px;
   padding: 50px 0;
 	background-color: var(--black-color);
 	color: white;
@@ -468,7 +378,6 @@ footer a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    /* z-index: 9999;  */
     margin-top: 60px;
   }
   
@@ -479,7 +388,6 @@ footer a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    /* z-index: -1; */
     border: 10px solid transparent;
     border-image: linear-gradient(to right, #F9F9ED, #6D5C7D,#8874A3, #B7ABC7, #F9F9ED );  /* #3D2B1F, #8B6969, #F9F9ED, #A0522D,#5E2612, #3D2B1F*/
     border-image-slice: 1;
@@ -487,21 +395,136 @@ footer a:hover {
 
 /* ---------------------------- Bouton "Retour vers le haut de la page" ----------------------------------------------------- */
 
-#haut-page {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0px 0px 5px #888;
-  }
-  
-
-#haut-page:hover {
-  background-color: #555;
+.back-to-top {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--black-color);
+  font-size: 15px;
+  padding: 1em;
+  display: none;
 }
+
+.back-to-top:hover, .back-to-top:focus, .back-to-top:active {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--white-color);
+} 
+
+/* ----------------------------------------------- Bouton dark-light mode -------------------------------------------------------- */
+
+/* CSS dark-light mode */
+.dark-mode button {
+  background-color: var(--pink-color);
+  color: var(--black-color);
+}
+
+.dark-mode button:hover {
+  background-color: var(--brown-color);
+  color: var(--white-color);
+}
+
+#mode-toggle {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#mode-toggle.dark-mode {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+#mode-toggle.dark-mode i.fa-sun {
+  display: none;
+}
+
+#mode-toggle.dark-mode i.fa-moon {
+  display: inline-block;
+}
+
+#mode-toggle i.fa-sun {
+  display: inline-block;
+}
+
+#mode-toggle i.fa-moon {
+  display: none;
+}
+
+#mode-toggle:hover {
+  color: var(--pink-color);
+}
+
+#mode-toggle .dark-mode:hover {
+  color: var(--pink-color);
+}
+
+
+
+
+/* ----------------------------------------------- Dark mode -------------------------------------------------------- */
+
+.dark-mode {
+  --white-color: #262220;
+  --black-color: #F7F1F0;
+  --pink-color: #A15C38;
+  --brown-color: #C3A6A0;
+
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.dark-mode #home .text-animate {
+  color: var(--brown-color);
+}
+
+.dark-mode h2 {
+  color: var(--black-color);
+}
+
+.dark-mode .timeline h2 {
+  color: var(--pink-color);
+}
+
+.dark-mode .timeline-item-content {
+  box-shadow: 0 2px 4px rgba(255, 255, 255, .6);
+}
+
+.dark-mode .skill-container p {
+  color: var(--black-color);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, .6);
+}
+
+.dark-mode footer {
+  background-color: var(--black-color);
+}
+
+.dark-mode footer p {
+  color: #363535;
+}
+
+.dark-mode footer p:hover {
+  color: black;
+}
+
+.dark-mode .back-to-top:hover, .dark-mode .back-to-top:focus {
+  background-color: #ccc;
+}
+
+.dark-mode footer a {
+  color:  #363535;
+}
+
+footer a:hover {
+  color: black;
+}
+
+
+
+
+
+

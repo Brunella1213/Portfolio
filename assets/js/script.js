@@ -1,4 +1,5 @@
-// Animation effet machine à écrire sur "Laissez moi vous parlez un peu de moi !"
+// Animation effet machine à écrire sur "Permettez-moi de me présenter"
+
 window.addEventListener("DOMContentLoaded", (event) => {
   repeatAnimation();
   });
@@ -33,6 +34,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   
 
   // JavaScript pour le contour arc-en-ciel
+
   document.addEventListener('DOMContentLoaded', function() {
     const border = document.querySelector('rainbow-border');
     border.style.display = 'none';
@@ -41,69 +43,91 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }, 0);
   });
   
+  // JavaScript pour le menu hamburger avec un effet de défilement en douceur
   
   $(document).ready(function() {
 
-    // Fix for "hamburger menu" not collapsing after a click on menu item
+    // Correction pour que le menu hamburger se replie après un clic sur un élément de menu.
     $("nav").find("li").on("click", "a", function() {
       $('.navbar-collapse.in').collapse('hide');
     });
 
-    // Add smooth scrolling to all nav links
+    // Ajouter un défilement en douceur à tous les liens de navigation.
     $(".navbar a, footer a[href='#home']").on('click', function(event) {
-      // Don't scroll if on a mobile phone, it's too awkward
+      // Ne pas faire défiler si l'on est sur un portable
       if (this.hash !== "" && $(window).width() > 480) {
-        // Prevent default anchor click behavior
+        // Empêcher le comportement de clic d'ancre par défaut.
         event.preventDefault();
-        // Store hash
+        // Stocker la variable de hachage.
         var hash = this.hash;
-        // Scroll to hash tag in 700 ms
+        // Faites défiler jusqu'à la balise de hachage en 700 ms.
         $('html, body').animate({
           scrollTop: $(hash).offset().top
         }, 700, function() {
-          // Add hash (#) to URL when done scrolling
+        // Ajouter le hachage (#) à l'URL une fois le défilement terminé.
           window.location.hash = hash;
         });
       }
     });
 
-  });
+  }); 
+
+  // JavaScript pour le bouton "Dark-Light Mode"
+
+  // const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+  // const currentTheme = localStorage.getItem('theme');
+
+  // if (currentTheme) {
+  //   document.documentElement.setAttribute('data-theme', currentTheme);
+
+  //   if (currentTheme === 'dark') {
+  //     toggleSwitch.checked = true;
+  //   }
+  // }
+
+  // function switchTheme(e) {
+  //   if (e.target.checked) {
+  //     document.documentElement.setAttribute('data-theme', 'dark');
+  //     localStorage.setItem('theme', 'dark');
+  //   }
+  //   else {
+  //     document.documentElement.setAttribute('data-theme', 'light');
+  //     localStorage.setItem('theme', 'light');
+  //   }
+  // }
+
+  // toggleSwitch.addEventListener('change', switchTheme, false);
+
+  // function toggleDarkMode() {
+  //   const elements = document.querySelectorAll('*');
+  //   elements.forEach(element => {
+  //     element.classList.toggle('dark-mode');
+  //   });
+  // }
   
-  // JavaScript pour le bouton "Haut de page"
-
-//   window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     document.getElementById("haut-page").style.display = "block";
-//   } else {
-//     document.getElementById("haut-page").style.display = "none";
-//   }
-// }
-
-// function scrollToTop() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
-
-const boutonRetourHaut = document.querySelector('#haut-page');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 0) {
-    boutonRetourHaut.style.display = 'block';
-  } else {
-    boutonRetourHaut.style.display = 'none';
-  }
-});
-
-boutonRetourHaut.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
-
-
+  // const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+  // const currentTheme = localStorage.getItem('theme');
+  
+  // if (currentTheme) {
+  //     document.documentElement.setAttribute('data-theme', currentTheme);
+  
+  //     if (currentTheme === 'dark') {
+  //         toggleSwitch.checked = true;
+  //     }
+  // }
+  
+  // function switchTheme(e) {
+  //     if (e.target.checked) {
+  //         document.documentElement.setAttribute('data-theme', 'dark');
+  //         localStorage.setItem('theme', 'dark');
+  //     }
+  //     else {
+  //         document.documentElement.setAttribute('data-theme', 'light');
+  //         localStorage.setItem('theme', 'light');
+  //     }    
+  // }
+  
+  // toggleSwitch.addEventListener('change', switchTheme, false);
   
 
 
