@@ -43,10 +43,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }, 0);
   });
   
-  // JavaScript pour le menu hamburger avec un effet de défilement en douceur
+  // JavaScript (Jqeury) pour le menu hamburger avec un effet de défilement en douceur
   
-  $(document).ready(function() {
-
+  $(document).ready(function() {   // Activer la fonction qui suit lorsque la page est chargée
     // Correction pour que le menu hamburger se replie après un clic sur un élément de menu.
     $("nav").find("li").on("click", "a", function() {
       $('.navbar-collapse.in').collapse('hide');
@@ -71,68 +70,3 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
 
   }); 
-
-  // JavaScript pour le bouton "Dark-Light Mode"
-
-  // const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-  // const currentTheme = localStorage.getItem('theme');
-
-  // if (currentTheme) {
-  //   document.documentElement.setAttribute('data-theme', currentTheme);
-
-  //   if (currentTheme === 'dark') {
-  //     toggleSwitch.checked = true;
-  //   }
-  // }
-
-  // function switchTheme(e) {
-  //   if (e.target.checked) {
-  //     document.documentElement.setAttribute('data-theme', 'dark');
-  //     localStorage.setItem('theme', 'dark');
-  //   }
-  //   else {
-  //     document.documentElement.setAttribute('data-theme', 'light');
-  //     localStorage.setItem('theme', 'light');
-  //   }
-  // }
-
-  // toggleSwitch.addEventListener('change', switchTheme, false);
-
-  // function toggleDarkMode() {
-  //   const elements = document.querySelectorAll('*');
-  //   elements.forEach(element => {
-  //     element.classList.toggle('dark-mode');
-  //   });
-  // }
-  
-  // const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-  // const currentTheme = localStorage.getItem('theme');
-  
-  // if (currentTheme) {
-  //     document.documentElement.setAttribute('data-theme', currentTheme);
-  
-  //     if (currentTheme === 'dark') {
-  //         toggleSwitch.checked = true;
-  //     }
-  // }
-  
-  // function switchTheme(e) {
-  //     if (e.target.checked) {
-  //         document.documentElement.setAttribute('data-theme', 'dark');
-  //         localStorage.setItem('theme', 'dark');
-  //     }
-  //     else {
-  //         document.documentElement.setAttribute('data-theme', 'light');
-  //         localStorage.setItem('theme', 'light');
-  //     }    
-  // }
-  
-  // toggleSwitch.addEventListener('change', switchTheme, false);
-  
-
-
-
-
-
-
-

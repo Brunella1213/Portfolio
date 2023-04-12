@@ -12,8 +12,6 @@
 
 body{
   background-color: var(--white-color) !important;
-  margin: 0;
-  padding: 0;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -92,17 +90,26 @@ a{
 }
 
 .navbar >.navbar-nav>.resume-button:after {
-  color: var(--black  -color) !important;
+  color: var(--black-color) !important;
 }
 
 /* ---------------------------- Présentation -------------------------------------*/
 
 .img-intro img{
   position: absolute;
-  max-width: 100%;
+  max-width: 80%;
+  width: 70%;
   height: auto;
   z-index: 1;
 }
+
+/* */
+@media screen and (max-width: 600px) {
+  .img-intro img {
+      width: 400px;
+  }
+}
+
 
 .img-intro img:hover {
   transform: scale(1.1);
@@ -130,13 +137,31 @@ a{
   color: var(--pink-color);
 }
 
-.rectangle {
+/* .rectangle {
   position : relative;
   width:560px;
   height:200px;
   background-color: var(--brown-color) !important;
   top: 300px;
   left: 300px; 
+} */
+
+@media(max-width: 1920px) and (min-width: 1080px) {
+  .img-intro img{
+    position: absolute;
+    max-width: 90%;
+    height: auto;
+    z-index: 1;
+  }
+
+  /* .rectangle {
+    position : relative;
+    width:560px;
+    height:200px;
+    background-color: var(--brown-color) !important;
+    top: 300px;
+    left: 150px; 
+  } */
 }
 
 .rectangle :hover {
@@ -376,7 +401,7 @@ footer a :hover {
   }
 }
 
-/* Pour les écrans entre 768px et 991px */
+/* Pour les écrans entre 768px et 1024px */
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
     padding: 60px 30px;
@@ -458,10 +483,6 @@ footer a :hover {
 
 /* Pour les écrans plus large que 1024px */
 @media (min-width: 1024px) {
-  /* .rectangle {
-    width: 70%;
-    top: 5%;
-  } */
 
   .timeline {
     padding: 5% 0;
@@ -560,6 +581,7 @@ footer a :hover {
 
 .back-to-top {
   position: fixed;
+  z-index: 1;
   bottom: 2em;
   right: 2em;
   text-decoration: none;
@@ -684,66 +706,5 @@ footer a :hover {
 .dark-mode  footer a:hover {
   color: black;
 }
-
-
-
-
-
-
-
-
-
-
-  /* Tablets */
-  /* @media (max-width: 992px) {
-    .navbar ul li a {
-      font-size: .9em;
-      padding-left: 0;
-    }
-  } */
-
-/* Portrait phones and smaller */
-
-/* @media (max-width: 480px) {
-  .navbar ul li a {
-    font-size: .9em;
-    padding-left: 0;
-  }
-  .navbar-brand>img {
-    height: auto;
-    padding: 7px 15px;
-    width: 200px;
-  }
-
-  h1.title {
-    font-size: 1.8em;
-    padding-top: 1.6em;
-  }
-  h3.title {
-    font-size: 1.2em;
-  }
-  .container-fluid {
-    padding-top: 80px;
-  }
-  .fa-stack {
-    font-size: 1.3em;
-  }
-}
-
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-      width: 100%;
-      margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-      font-size: 150px;
-    } 
-  } */
 
 
