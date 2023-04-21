@@ -137,15 +137,6 @@ a{
   color: var(--pink-color);
 }
 
-/* .rectangle {
-  position : relative;
-  width:560px;
-  height:200px;
-  background-color: var(--brown-color) !important;
-  top: 300px;
-  left: 300px; 
-} */
-
 @media(max-width: 1920px) and (min-width: 1080px) {
   .img-intro img{
     position: absolute;
@@ -153,15 +144,6 @@ a{
     height: auto;
     z-index: 1;
   }
-
-  /* .rectangle {
-    position : relative;
-    width:560px;
-    height:200px;
-    background-color: var(--brown-color) !important;
-    top: 300px;
-    left: 150px; 
-  } */
 }
 
 .rectangle :hover {
@@ -170,11 +152,6 @@ a{
 }
 
 /* ----------------------- Biographie ------------------------------------------------------ */
-
-
-
-
-
 
                                                         /* ---------------------------------------- Frise chronologique ---------------------------------------- */
 
@@ -503,10 +480,6 @@ footer a :hover {
     padding: 10% 0;
     margin-bottom: -190px;
   }
-
-  /* footer p {
-    font-size: 1vw;
-  } */
 }
 
 /* Pour les écrans de taille moyenne (maximum 992px) */
@@ -556,7 +529,7 @@ footer a :hover {
 
 /*---------------------------------------- Bordure multicolore ------------------ */
 
-  .rainbow-border {
+  /* .rainbow-border {
     position: fixed;
     top: 0;
     left: 0;
@@ -573,9 +546,9 @@ footer a :hover {
     right: 0;
     bottom: 0;
     border: 10px solid transparent;
-    border-image: linear-gradient(to right, #F9F9ED, #6D5C7D,#8874A3, #B7ABC7, #F9F9ED );  /* #3D2B1F, #8B6969, #F9F9ED, #A0522D,#5E2612, #3D2B1F*/
+    border-image: linear-gradient(to right, #F9F9ED, #6D5C7D,#8874A3, #B7ABC7, #F9F9ED );  
     border-image-slice: 1;
-  }
+  } */
 
 /* ---------------------------- Bouton "Retour vers le haut de la page" ----------------------------------------------------- */
 
@@ -647,9 +620,6 @@ footer a :hover {
   color: var(--pink-color);
 }
 
-
-
-
 /* ----------------------------------------------- CSS du Dark mode -------------------------------------------------------- */
 
 .dark-mode {
@@ -700,11 +670,23 @@ footer a :hover {
 }
 
 .dark-mode footer a {
-  color:  #363535;
+  color: #363535;
 }
 
-.dark-mode  footer a:hover {
-  color: black;
+.dark-mode footer a:hover {
+  color: var(--white-color);
+}
+
+.dark-mode footer a span {
+  color: #363535;
+}
+
+.dark-mode footer a span:hover {
+  color: var(--white-color);
+}
+
+.dark-mode footer {
+  background-color: var(--brown-color);
 }
 
 
