@@ -1,12 +1,22 @@
-:root{
-    /* --black-color: black;
-    --violet-color: #8874A3;
-    --dark-violet-color: #6D5C7D;
-    --light-violet-color: #B7ABC7;
-    --white-color: #F9F9ED; */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-    --white-color : #F7F1F0;
-    --black-color : #262220;
-    --pink-color : #C3A6A0;
-    --brown-color: #A15C38;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+:root{
+
+    --main-font-family: 'IBM Plex Mono', monospace;
+
+    /* --heading-font-family: 'Montserrat', monospace; */
+
+    --heading-font-family: 'Playfair Display', serif;
+
+    --white-color : #f9f9f9;
+    --black-color : #000300;
+
+    --green-color :   #6E714D;
+    --red-color : #A93F33;
+    --brown-color:   #7E6350;
+    --beige-color : #F4EAE0;
+    --violet-color : #977ac4; 
 }

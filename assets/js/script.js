@@ -2,35 +2,26 @@
 
 window.addEventListener("DOMContentLoaded", (event) => {
   repeatAnimation();
-  });
+});
 
-  function repeatAnimation() {
-    animate_text();
-    setInterval(animate_text, 5000); // Répéter toutes les 5 secondes (5000 millisecondes)
-  }  
-  
-  function animate_text() 
-  {
-    let delay = 100,
-        delay_start = 0,
-        contents,
-        letters;
-  
-    document.querySelectorAll(".text-animate").forEach(function (elem) {
-      contents = elem.textContent.trim();
-      elem.textContent = "";
-      letters = contents.split("");
-      elem.style.visibility = 'visible';
-  
-      letters.forEach(function (letters, index) {
-        setTimeout(function () {
-          elem.textContent += letters;
-    
-        }, delay_start + delay * index);
-      });    
-      delay_start += delay * letters.length;
-    });
+function repeatAnimation() {
+  let texte = document.querySelector('h2.text-animate');
+  let originalContent = texte.innerHTML;
+  texte.innerHTML = '';
+  let index = 0;
+
+  function typeWriter() {
+    if (index < originalContent.length) {
+      texte.innerHTML += originalContent.charAt(index);
+      index++;
+      setTimeout(typeWriter, 300); // Utilise setTimeout au lieu de setInterval
+    } else {
+      setTimeout(repeatAnimation, 1000); // Attend 2 secondes avant de répéter l'animation
+    }
   }
+
+  typeWriter(); // Commence l'animation de frappe
+}
   
 
   // JavaScript pour le contour arc-en-ciel
@@ -43,10 +34,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }, 0);
   });
   
-  // JavaScript pour le menu hamburger avec un effet de défilement en douceur
+  // JavaScript (Jqeury) pour le menu hamburger avec un effet de défilement en douceur
   
-  $(document).ready(function() {
-
+  $(document).ready(function() {   // Activer la fonction qui suit lorsque la page est chargée
     // Correction pour que le menu hamburger se replie après un clic sur un élément de menu.
     $("nav").find("li").on("click", "a", function() {
       $('.navbar-collapse.in').collapse('hide');
@@ -72,67 +62,4 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   }); 
 
-  // JavaScript pour le bouton "Dark-Light Mode"
-
-  // const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-  // const currentTheme = localStorage.getItem('theme');
-
-  // if (currentTheme) {
-  //   document.documentElement.setAttribute('data-theme', currentTheme);
-
-  //   if (currentTheme === 'dark') {
-  //     toggleSwitch.checked = true;
-  //   }
-  // }
-
-  // function switchTheme(e) {
-  //   if (e.target.checked) {
-  //     document.documentElement.setAttribute('data-theme', 'dark');
-  //     localStorage.setItem('theme', 'dark');
-  //   }
-  //   else {
-  //     document.documentElement.setAttribute('data-theme', 'light');
-  //     localStorage.setItem('theme', 'light');
-  //   }
-  // }
-
-  // toggleSwitch.addEventListener('change', switchTheme, false);
-
-  // function toggleDarkMode() {
-  //   const elements = document.querySelectorAll('*');
-  //   elements.forEach(element => {
-  //     element.classList.toggle('dark-mode');
-  //   });
-  // }
   
-  // const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-  // const currentTheme = localStorage.getItem('theme');
-  
-  // if (currentTheme) {
-  //     document.documentElement.setAttribute('data-theme', currentTheme);
-  
-  //     if (currentTheme === 'dark') {
-  //         toggleSwitch.checked = true;
-  //     }
-  // }
-  
-  // function switchTheme(e) {
-  //     if (e.target.checked) {
-  //         document.documentElement.setAttribute('data-theme', 'dark');
-  //         localStorage.setItem('theme', 'dark');
-  //     }
-  //     else {
-  //         document.documentElement.setAttribute('data-theme', 'light');
-  //         localStorage.setItem('theme', 'light');
-  //     }    
-  // }
-  
-  // toggleSwitch.addEventListener('change', switchTheme, false);
-  
-
-
-
-
-
-
-

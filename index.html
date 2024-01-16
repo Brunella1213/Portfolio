@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="assets/img/flower.png" type="image/x-icon">
 
   <meta name="description" content="Portfolio de Ony Brunella ANDRIATSAHAVOJAONA">
   <meta name="author" content="Ony Brunella ANDRIATSAHAVOJAONA">
@@ -21,25 +22,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
 </head>
-<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0" style="zoom: 1;">
 
 <a href="home" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-
-
-<!-- 
-<div class="theme-switch">
-<label for="toggle-checkbox"></label>
-<input type="checkbox" id="toggle-checkbox">
-<div class="slider"></div> -->
-
-
-
-    
-
-
-
-<!-- <div class="rainbow-border"></div> -->
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -49,174 +34,244 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a class="navbar-brand" href="#home"><i class="fa-regular fa-star"></i>&nbsp;&nbsp;Ony Brunella&nbsp;&nbsp;<i class="fa-regular fa-star"></i></a>
+        <!-- <a class="navbar-brand" href="#home"><strong>Ony Brunella</strong></a> -->
     </div>
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home">Accueil</a></li>
-          <li><a href="#about">Biographie</a></li>
-          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#about">A propos de moi</a></li>
+          <li><a href="#experience">Expériences</a></li>
+          <li><a href="#work">Projets</a></li>
           <li><a href="#contact">Contact</a></li>
+
           <li><a class="resume-button" href="CV_Ony_Brunella_ANDRIATSAHAVOJAONA.pdf" target="_blank">CV</a></li> 
         </ul>
       </div>
-      <!-- <label class="switch" for="theme-switch">
-        <input type="checkbox" id="theme-switch">
-        <span class="slider round"></span>
-      </label> -->
-
       <button id="mode-toggle">
         <i class="fas fa-sun"></i>
         <i class="fas fa-moon"></i>
       </button>
-      
-    
+
   </div>
 </nav>
 
-<section id="home" class="content-fluid page-view">
+<section id="home" class="content-fluid page-view text-center">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <div class="page-header">
-          <h1>Hello, World.</h1>
+      <div class="box-intro">
+        <h2>Etudiante en troisième année de <strong class="strong-intro">BUT Informatique</strong> à l'IUT de Villetaneuse</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="relative">
+          <h2 class="text-animate">Ony Brunella</h2>
+          <span class="cursor"></span>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="img-intro">
+          <img src="assets/img/me.png" alt="">
         </div>
       </div>
     </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <h2>Hi ! Je suis <strong class="strong-intro">Ony Brunella ANDRIATSAHAVOJAONA</strong> et je suis une étudiante en deuxième année à l'Université Sorbonne Paris Nord en <strong class="strong-intro">BUT Informatique</strong>. Je recherche activement une <strong class="strong-intro">alternance</strong> pour Septembre 2023.</h2>
-          <h2 class="text-animate"><strong>Permettez-moi de me présenter</strong></h2>
-        </div>
-          <div class="col-lg-6">
-            <div class="img-intro">
-              <img src="assets/img/me.png" alt="Ony Brunella ANDRIATSAHAVOJAONA">
-            </div>
-              <div class="rectangle"></div>
-          </div>
-      </div>
   </div>
 </section>
 
-<section id="about" class="content-fluid page-view">
-  <div class="container">
+<section id="about" class="content-fluid">
+  <div class="container container-about">
     <div class="row">
       <div class="col-lg-12">
-        <h2>A propos de moi</h2>
+        <h2 class="about-title">A propos de moi</h2>
       </div>
     </div>
       <div class="row">
         <div class="col-lg-6">
-          <p>Je suis une étudiante en BUT Informatique et passionnée par le web design. Mon objectif est donc de devenir développeuse web fullstack ou front end.</p>
+          <div class="img-about-me">
+          <img src="assets/img/about-me.png" alt="">
+        </div>
         </div>
           <div class="row">
             <div class="col-lg-6">
-              <p>Je recherche activement un contrat d'alternance d'une durée de 1 an à partir de Septembre 2023 dans le domaine du développement web.</p>
+              <p>Je suis actuellement étudiante en 3ème année de Bachelor Universitaire de Technologie (BUT) en Informatique à l'IUT de Villetaneuse, situé à l'Université de Sorbonne Paris Nord. Je suis également <strong>alternante en tant que intégratrice web - webdesigner</strong> au sein de la <strong>Philharmonie de Paris/Cité de la musique</strong>.</p>
+              <p>Je nourris une véritable passion pour le développement web et le web design. Mon ambition est de devenir une <strong>développeuse web</strong> spécialisée en front-end !</p>
             </div>
           </div>
       </div>
-  </div>
-
-<!------------------------------------- Frise chronologique de mes études ---------------------- -->
-
-<div class="container">
-  <div class="row">
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-item-content">
-          <h2>BUT Informatique</h2>
-          <p>Actuellement en deuxième année</p>
-          <p>IUT de Villetaneuse, Villetaneuse, France</p>
-          <p>Depuis Septembre 2021</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-item-content">
-          <h2>Baccalauréat général&nbsp;<i class="fa-regular fa-circle-check"></i></h2>
-          <p>Mention assez bien </p>
-          <p>Sciences de l'Ingénieur, Physique-Chimie, Maths</p>
-          <p>Lycée Paul Eluard, Saint-Denis, France</p>
-          <p>Septembre 2018 - Juillet 2021</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-item-content">
-          <h2>Brevet des collèges&nbsp;<i class="fa-regular fa-circle-check"></i></h2>
-          <p>Mention très bien </p>
-          <p>Collège Elsa Triolet, Saint-Denis, France</p>
-          <p>Septembre 2015 - Juin 2018</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-  
-</section>
-
-<!-- ------------- Skills Section ------------------------>   
-
-<section id="skills" class="container-fluid page-view">
+  </div> 
   <div class="container">
-    <div class="row"> 
-    <div class="col-lg-12">
-      <div class="col-md-6 col">
-        <h2><i class="fa fa-code"></i>&nbsp;&nbsp;&nbsp;Langages de programmation</h2>
-          <div class="skill-icon-container">
-            <i class="devicon-html5-plain" title="HTML 5"></i>
-            <i class="devicon-css3-plain" title="CSS 3"></i>
-            <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
-            <i class="devicon-php-plain" title="PHP"></i>
-            <i class="devicon-java-plain" title="Java"></i>
-            <i class="devicon-javascript-plain" title="JavaScript : en cours d'apprentissage"></i>
-            <i class="devicon-cplusplus-plain" title="C++ : en cours d'apprentissage"></i>
-          </div>
-      </div>
-
-      <div class="col-md-6">
-        <h2><i class="fa fa-file-code-o"></i>&nbsp;&nbsp;&nbsp;Compétences techniques</h2>
-          <div class="skill-icon-container"> 
-            <i class="fas fa-database" title="SQL"></i>
-            <i class="devicon-mysql-plain" title="MySQL"></i>
-            <i class="devicon-mariadb-plain" title="MariaDB"></i>
-            <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
-            <i class="devicon-linux-plain" title="Linux"></i>
-            <i class="devicon-windows8-original" title="Windows"></i>
-            <i class="devicon-git-plain" title="Git"></i>
-            <i class="devicon-github-plain" title="Github"></i>
-          </div>
-      </div>
-    </div>
-
-    </div>
-    <div class="col-lg-12">
-      <div class="col-md-6">
-        <h2><i class="fa-solid fa-book-open"></i>&nbsp;&nbsp;&nbsp;Compétences transversales</h2>
-          <div class="skill-container text-center"> 
-            <p>Travail en équipe</p>
-            <p>Créativité</p>
-            <p>Communication orale et écrite</p>
-            <p>Compréhension des besoins client</p>
-            <p>Gestion de projet</p>
-          </div>
-      </div>
-      <div class="col-md-6">
-        <h2><i class="fas fa-language"></i>&nbsp;&nbsp;&nbsp;Langues</h2>
-            <div class="skill-container text-center"> 
-              <p>Anglais : niveau B1</p>
-              <p>Français : langue maternelle</p>
+    <div class="row">
+      <div class="col-lg-6">
+        <section class="collapsible-skills">
+          <input type="checkbox" name="collapse" id="skills1">
+            <h4 class="skills">
+              <label for="skills1"><strong>Compétences</strong></label>
+            </h4>
+            <div class="content-collapsible">
+              <div id="skills">
+                <i class="devicon-html5-plain" title="HTML5"></i>
+                <i class="devicon-css3-plain" title="CSS3"></i>
+                <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
+                <i class="devicon-javascript-plain" title="JavaScript"></i>
+                <i class="devicon-java-plain" title="Java"></i>
+                <i class="devicon-php-plain" title="PHP"></i>
+                <i class="devicon-postgresql-plain"></i>
+                <i class="devicon-mysql-plain" title="MySQL"></i>
+                <i class="devicon-vuejs-plain" title="VueJS"></i>
+                <i class="devicon-git-plain" title="Git"></i>
+                <i class="devicon-xd-line" title="Adobe XD"></i>
+                <i class="devicon-figma-plain" title="Figma"></i>
+                <i class="devicon-bash-plain" title="Bash"></i>
+                <i class="devicon-linux-plain" title="Linux"></i>
+                <i class="devicon-ubuntu-plain" title="Ubuntu"></i>
+                <i class="devicon-debian-plain" title="Debian"></i>
+                <i class="devicon-jupyter-plain" title="Jupyter"></i>
+                <i class="devicon-docker-plain" title="Docker"></i>
+              </div>
             </div>
-          </div>
+        </section>
       </div>
-    </div>  
+      <div class="col-lg-6">
+        <section class="collapsible-skills">
+          <input type="checkbox" name="collapse" id="skills2">
+            <h4 class="skills">
+              <label for="skills2"><strong>Compétences en cours d'acquisition</strong></label>
+            </h4>
+            <div class="content-collapsible">
+              <div id="skills">
+                <i class="devicon-angularjs-plain" title="Angular"></i>
+                <i class="devicon-react-plain" title="React"></i>
+                <i class="devicon-photoshop-line" title="Photoshop"></i>
+                <i class="devicon-illustrator-line" title="Adobe Illustrator"></i>       
+            </div>
+            </div>
+          </section>
+      </div>
+    </div>
   </div>
 </section>
 
+<!------------------------------------------------------------------ Experiences --------------------------------------------------------->
+
+<section id="experience" class="content-fluid page-view">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <section class="collapsible-experience">
+          <input type="checkbox" name="collapse" id="experience1" checked="checked">
+            <h3 class="experience">
+              <label for="experience1">Alternance Intégratrice web - webdesigner au sein de la <strong>Philharmonie de Paris / Cité de la musique</strong><span class="arrow"></span></label>
+            </h3>
+            <div class="content-collapsible">
+              <p><strong>Période :</strong> De Septembre 2023 jusqu'en Septembre 2024</p>
+              <p><strong>Missions :</strong> 
+                Évolution du site <a href="https://pad.philharmoniedeparis.fr" target="_blank">Philharmonie à la Demande</a>
+                <li>Intégration des contenus (HTML5/CSS3/JavaScript)</li>
+                <li>Réalisation de maquettes graphiques</li> <!--zonings-->
+                <li>Amélioration continue du référencement naturel (SEO) et renforcement de l'accessibilité du site conforme aux normes WCAG</li>
+                <li>Participation à la conception et au recettage de nouveaux modules et fonctionnalités du site</li>
+                <li>Tests des fonctionnalités développées par le prestataire</li>
+                <li>Optimisation et tests de compatibilité avec différents navigateurs (desktop et mobiles)</li>
+              </p>
+              <p><strong>Encadrants :</strong>
+                <li>Chloé ABDOUN</li>
+              </p>
+              <p><strong>Compétences utilisées : </strong> 
+                <li>
+                  <i class="devicon-html5-plain-wordmark colored"></i>
+                  <i class="devicon-css3-plain-wordmark colored"></i>
+                  <i class="devicon-javascript-plain-wordmark colored"></i>
+                  <i class="devicon-photoshop-line colored"></i>
+                  <i class="devicon-xd-line colored"></i>
+                  <i class="devicon-illustrator-line colored"></i>
+                  <i class="devicon-git-plain-wordmark colored"></i>
+                  <i class="devicon-github-original-wordmark colored"></i>
+                </li>
+              </p>
+            </div>
+          </section>
+          <section class="collapsible-experience">
+            <input type="checkbox" name="collapse" id="experience2">
+              <h3 class="experience">
+                <label for="experience2">Stage de 8 semaines au sein du <strong>Laboratoire Informatique de Paris Nord (LIPN)</strong><span class="arrow"></span></label>
+              </h3>
+              <div class="content-collapsible">
+                <p><strong>Période :</strong> Du 2 mai 2023 au 30 juin 2023</p>
+                <p><strong>Missions :</strong> 
+                  <li>Amélioration de l'accessibilité du <a href="https://lipn.univ-paris13.fr/intranet/" target="_blank">nouvel intranet du LIPN développé en JavaScript (MEVN stack) </a> pour les rendre plus accessibles aux personnes portant un handicap (notamment visuel) et utilisant des lecteurs d'écran</li>
+                  <li>Correction des problèmes d'accessibilité principalement détectés par M. Omar Kebli, étant lui-même malvoyant</li>
+                  <li>Travail sur l'adaptation du système pour garantir une expérience utilisateur fluide sur divers appareils</li>
+                  <li>Écriture d'un Guide détaillé des bonnes pratiques pour améliorer l'accessibilité en Vue.js/Vuetify</li>
+                </p>
+                <p><strong>Encadrants :</strong>
+                  <li><a href="https://lipn.fr/~kebli/" target="_blank">Omar KEBLI</a></li>
+                  <li><a href="https://www.jaime-arias.fr" target="_blank">Jaime ARIAS (Co-encadrant)</a></li>
+                </p>
+                <p><strong>Compétences utilisées : </strong> 
+                  <li>
+                    <i class="devicon-vuejs-plain-wordmark colored" title="VueJs (Vuetify)"></i>
+                    <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+                    <i class="devicon-git-plain-wordmark colored" title="Git"></i>
+                    <i class="devicon-gitlab-plain-wordmark colored"></i>
+                    <i class="devicon-linux-plain colored" title="Linux"></i>
+                  </li>
+                </p>
+              </div>
+           </section>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="experience-title">Expériences</h2>
+        </div>
+      </div>
+  </div>
+</section>  
+
+<!------------------------------------------------------------------ Projets --------------------------------------------------------->
+<section id="work" class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="cards-container">
+          <div class="card">
+            <a href="https://github.com/Brunella1213/SAE_BUT_INFO_1" target="_blank">
+              <img src="assets/img/SAE-Mariage.png" alt="">
+              <div class="card-content">
+                <h2>Les SAE de ma 1ère de BUT Informatique</h2>
+                <p>dont mon tout premier projet web en HTML et CSS (SAE 1.05 - Recueil de besoins)</p>
+                <div class="date">2021 - 2022</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="https://github.com/Brunella1213/SAE_BUT_INFO_2" target="_blank">
+              <img src="assets/img/SAE-Stage.png" alt="">
+              <div class="card-content">
+                <h2>Les SAE de ma 2ème de BUT Informatique</h2>
+                <p>dont mon tout premier projet web en PHP (SAE 3.01 - Développement d'une application)</p>
+                <div class="date">2022 - 2023</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="https://github.com/Brunella1213/Guide-des-bonnes-pratiques-accessibilite/blob/main/Guide%20de%20bonnes%20pratiques%20sur%20l'accessibilité%20numérique.pdf" target="_blank">
+              <img src="assets/img/intranet.png" alt="">
+              <div class="card-content">
+                <h2>Guide des bonnes pratiques sur l'accessibilité numérique</h2>
+                <p>Ce document a été écrit lors de mon stage</p>
+                <div class="date">Juillet 2023</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      
 <!-- ------------- Contact Section ------------------------>
 <section id="contact" class="container-fluid text-center page-view">
   <div class="container">
-    <h2 class="page-title red">Contact</h2>
-    <h3 class="title">N'hésitez pas si vous avez des questions !</h3>
     <div class="row">
       <div class="col-sm-12">
         <ul class="list-inline">
@@ -239,8 +294,7 @@
         </ul>
         <ul class="list-inline">
           <li>
-            <p><span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;&nbsp;+33 7 64 83 63 58 </p>
-            <p><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;&nbsp;brunella.andria@gmail.com</p> 
+            <h2><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="user-select">brunella.andria@gmail.com</span></h2> 
           </li>
         </ul>
       </div>
@@ -248,15 +302,13 @@
   </div>
 </section>
 
-
-
-<!-- Footer -->
+<!-- --------------------------- Footer ------------------------------------------------------------------- -->
 <footer class="container-fluid text-center">
     <a class="up-arrow" href="#home" data-toggle="tooltip" title="Vers le haut de page">
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a><br><br>
-    <p>Fait par moi avec le&nbsp;&nbsp;<i class="fa-solid fa-heart"></i></p> 
-    <p><i class="fa-regular fa-copyright"></i>&nbsp;&nbsp;&nbsp;Ony Brunella ANDRIATSAHAVOJAONA</p>
+    <p>Fait avec le&nbsp;&nbsp;<i class="fa-solid fa-heart"></i></p> 
+    <p><i class="fa-regular fa-copyright"></i>&nbsp;&nbsp;&nbsp;Ony Brunella ANDRIATSAHAVOJAONA - 2024</p>
 </footer>
 
 <script src="assets/js/dark-light-mode.js"></script>
