@@ -155,7 +155,10 @@ p{
     height: auto;
     z-index: 1;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 930cec34cbbc664e4576e4c1938aff56c4030042
 }
 
 @media screen and (max-width: 600px) {
@@ -166,8 +169,14 @@ p{
 
 /* ----------------------- A propos de moi ------------------------------------------------------ */
 
+<<<<<<< HEAD
 
 .img-about-me img{
+=======
+                                                        /* ---------------------------------------- Frise chronologique ---------------------------------------- */
+
+.timeline {
+>>>>>>> 930cec34cbbc664e4576e4c1938aff56c4030042
   position: relative;
   width: 80%;
   height: auto;
@@ -652,6 +661,32 @@ footer .fa-heart {
   }
 }
 
+<<<<<<< HEAD
+=======
+/*---------------------------------------- Bordure multicolore ------------------ */
+
+  /* .rainbow-border {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 60px;
+  }
+  
+  .rainbow-border:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 10px solid transparent;
+    border-image: linear-gradient(to right, #F9F9ED, #6D5C7D,#8874A3, #B7ABC7, #F9F9ED );  
+    border-image-slice: 1;
+  } */
+
+>>>>>>> 930cec34cbbc664e4576e4c1938aff56c4030042
 /* ---------------------------- Bouton "Retour vers le haut de la page" ----------------------------------------------------- */
 
 .back-to-top {
@@ -722,7 +757,10 @@ footer .fa-heart {
   color: var(--green-color);
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 930cec34cbbc664e4576e4c1938aff56c4030042
 /* ----------------------------------------------- CSS du Dark mode -------------------------------------------------------- */
 
 /* ---------------------------- Dark Mode -------------------------- */
@@ -779,11 +817,27 @@ footer .fa-heart {
 }
 
 .dark-mode footer a {
-  color:  #363535;
+  color: #363535;
 }
 
 .dark-mode footer a:hover {
+<<<<<<< HEAD
   color: black;
+=======
+  color: var(--white-color);
+}
+
+.dark-mode footer a span {
+  color: #363535;
+}
+
+.dark-mode footer a span:hover {
+  color: var(--white-color);
+}
+
+.dark-mode footer {
+  background-color: var(--brown-color);
+>>>>>>> 930cec34cbbc664e4576e4c1938aff56c4030042
 }
 
 .dark-mode .back-to-top:hover, .dark-mode .back-to-top:focus {
